@@ -49,3 +49,19 @@ input[type='file']{
     border: none !important;
 }
 
+.poke{
+    text-decoration: none;
+    color: rgb(252, 6, 236);
+    text-align: center;
+    
+}
+
+.poke2{
+    text-decoration: none;
+    color:whitesmoke;
+    text-align: center;
+    
+}
+
+
+

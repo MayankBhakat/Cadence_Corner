@@ -32,17 +32,33 @@ function Login() {
     }
   };
   return (
-    <div  className="min-h-screen flex items-center justify-center">
-      <div className="flex flex-col gap-5 w-96 p-5">
-        <h1 className="text-3xl font-bold text-black">Welcome Back</h1>
+    <div style={{
+      backgroundImage: "url(ba.jpg)" ,
+      
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      height: '800px',
+      color: 'white',
+    }} className="min-h-screen flex items-center justify-center">
+      <div className="flex flex-col gap-5 w-96 p-5 ">
+        <h1 className="text-4xl font-bold poke">Welcome Back</h1>
         <hr />
         <input
+        style=
+        {{
+          height: 40, borderColor: 'pink', borderWidth: 1, color : "black"
+        }}
           type="text"
           placeholder="Email"
           value={user.email}
           onChange={(e) => setUser({ ...user, email: e.target.value })}
         />
         <input
+        style=
+        {{
+          height: 40, borderColor: 'pink', borderWidth: 1, color : "black"
+        }}
           type="password"
           placeholder="Password"
           value={user.password}
@@ -55,13 +71,7 @@ function Login() {
           Not yet Registered ? Click Here To Signup
         </Link>
       </div>
-      <div>
-        <img
-          className="h-[500px]"
-          src="https://img.freepik.com/premium-photo/3d-rendering-3d-illustration-red-black-music-note-icon-isolated-white-background-song-melody-tune-symbol-concept_640106-443.jpg?w=2000"
-          alt=""
-        />
-      </div>
+      
     </div>
   );
 }
